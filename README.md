@@ -6,5 +6,5 @@ Below are the screenshot of the projects:
 <br/>
 Login Page
 <br/>
-<img src="login.jpeg" alt="todo" width="600" height="500">
+<img src="login.jpeg" alt="todo" width="600" height="300">
 <br/>
