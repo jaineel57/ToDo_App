@@ -1,0 +1,36 @@
+<div class="text-center">
+    <h1>Todo List by Group 23</h1>
+</div>
+{% extends 'base/main.html' %} {% block content %}
+
+<div class="p-3 mt-4">
+    <div class="left-side text-center">
+        <img
+            class="img-fluid"
+            src="https://cdn-icons-png.flaticon.com/512/1791/1791961.png"
+            alt="img"
+            height="180px"
+            width="180px"
+        />
+    </div>
+    <div class="right-side mt-3">
+        <h1 class="text-center header-bar">Login</h1>
+        <div class="card-body mt-4 text-center">
+            <form method="POST">
+                <h5>{% csrf_token %} {{form.as_p}}</h5>
+
+                <input
+                    class="btn btn-success px-4 mt-3"
+                    type="submit"
+                    value="Login"
+                />
+            </form>
+            <p class="mt-3">
+                Don't have an account?
+                <a href="{% url 'register' %}">Register</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
